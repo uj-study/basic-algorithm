@@ -19,7 +19,7 @@ for i in range(n):
         if len(d) == 0:
             print('-1')
         else : 
-            print(a[len(d)-1])
+            print(d[len(d)-1])
             d.pop()
     elif a[0] == 'size':
         print(len(d))
