@@ -23,30 +23,30 @@ for m in M_list:
   else:
     print(result, end = " ")
 
-# 틀린 풀이 (체크해보기/ 이분탐색 풀어보기)
-# MAX_NUM = 10000000
-# tmp_list = [0 for i in range(2 * MAX_NUM + 1)]
+# 틀린 풀이 수정 (이분탐색 풀어보기)
+MAX_NUM = 10000000
+tmp_list = [0 for i in range(2 * MAX_NUM + 2)]
 
-# N = int(input())
+N = int(input())
 
-# N_list = list(map(int, sys.stdin.readline().split()))
+N_list = list(map(int, sys.stdin.readline().split()))
 
-# M = int(input())
-# M_list = list(map(int, sys.stdin.readline().split()))
+M = int(input())
+M_list = list(map(int, sys.stdin.readline().split()))
 
-# for n in N_list:
-#   if n > 0:
-#     tmp_list[MAX_NUM + n] += 1
-#   else:
-#     tmp_list[n] += 1
+for n in N_list:
+  if n >= 0:
+    tmp_list[MAX_NUM + n + 1] += 1
+  else:
+    tmp_list[abs(n)] += 1
 
-# result = []
-# for m in M_list:
-#   if m > 0:
-#     result.append(tmp_list[MAX_NUM + m])
-#   else:
-#     result.append(tmp_list[m])
+result = []
+for m in M_list:
+  if m >= 0:
+    result.append(tmp_list[MAX_NUM + m + 1])
+  else:
+    result.append(tmp_list[abs(m)])
 
-# for r in result:
-#   print(r, end = " ")
+for r in result:
+  print(r, end = " ")
 
