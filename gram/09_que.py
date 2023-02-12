@@ -7,6 +7,7 @@ print(queue) # deque([4, 5, 6, 7, 8])
 queue.popleft()
 queue.popleft()
 print(queue) # deque([6, 7, 8])
+queue.appendleft(5) # 앞에 추가도 있음
 
 # 클래스 모듈
 from queue import Queue

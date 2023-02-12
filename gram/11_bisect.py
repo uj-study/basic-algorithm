@@ -25,7 +25,7 @@ print(cnt_within_range(arr, 4, 7)) # 6
 
 """
 a = [60, 70, 80, 90]
-bisect.insort(a, 85)
+bisect.insert(a, 85)
 a
 [60, 70, 80, 85, 90]
 """
