@@ -19,7 +19,7 @@ def solution(num):
 
     for i in '123':
         if isGood(num + str(i)):
-            print(num + str(i))
+            # print(num + str(i))
             solution(num + str(i))
     return
 
