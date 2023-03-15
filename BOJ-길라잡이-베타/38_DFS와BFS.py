@@ -16,9 +16,6 @@ def bfs(start):
     visited[start] = 1
 
     while q:
-        print('q', q)
-        print('ans_bfs', ans_bfs)
-        print('visited', visited)
         current = q.pop(0)
         for next in adj[current]:
             if not visited[next]: # 방문하지 않은 노드인 경우, 큐 삽입
