@@ -1,10 +1,10 @@
 # a = '1 2 3 4 5 6 7'
 # print(a.split())
 
-# b = '1,2,3,4,5,6,7'
-# print(b.split(','))
+b = '1,2,3,4,5,6,7'
+print(b.split(','))
 
-# print(b.split(',', 2))
+print(b.split(',', 2))
 
 # c = '123'
 # print(c[0])

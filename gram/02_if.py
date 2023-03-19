@@ -8,4 +8,4 @@ elif(a==b):
 else:
     print('zzzz')
 
-print(a if a>b else b)
+print(a if a>b else b) # 삼항연산
