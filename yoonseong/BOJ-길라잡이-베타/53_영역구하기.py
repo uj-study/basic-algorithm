@@ -41,4 +41,4 @@ for i in range(M):
 print(len(answers))
 answers.sort()
 for a in answers:
-    print(a)
+    print(a, end=' ')
