@@ -4,9 +4,12 @@ input = sys.stdin.readline
 
 n = int(input())
 
+# 부등호들
 sign = list(input().strip().split())
 
 check = [True]*10
+
+# 최대, 최소 정답이 들어갈 배열
 ans_max = [0]*(n+1)
 ans_min = [0]*(n+1)
 
