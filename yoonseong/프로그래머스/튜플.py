@@ -28,3 +28,5 @@ def solution(s):
             if int(e) not in answer:
                 answer.append(int(e))
     return answer
+
+print(solution("{{2},{2,1},{2,1,3},{2,1,3,4}}"))
