@@ -6,7 +6,7 @@ n = int(input( ))
 
 point = [tuple(map(int, input().strip().split())) for _ in range(n)]
 
-point.sort(key=lambda x: (x[0], x[1]))
+point.sort(key=lambda x: (x[1], x[0]))
 
 for i in point:
     print(i[0], i[1])
