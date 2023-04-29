@@ -12,6 +12,7 @@ pl = 1
 pr = max(budget)
 ans = 0
 
+# 이분탐색시 확인할 부분
 def check(m):
     tmp = 0
     for x in budget:
