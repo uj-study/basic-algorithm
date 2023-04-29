@@ -32,6 +32,7 @@ print(d)                # {1, 2, 3}
                         # 출력시 자동 정렬상태.
 
 e = {'a': 1, 'b': 2, 'c': 3}
+print(e.items()) # [('a', 1), ...] 배열 형태로 변환
 print(e['b'])
 
 a = [int(x) for x in input().split()]  # 가 반복돌며 리스트에 들어감
