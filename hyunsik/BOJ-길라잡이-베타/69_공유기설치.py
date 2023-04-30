@@ -13,6 +13,7 @@ pl = 1
 pr = graph[-1] - graph[0]
 ans = 0
 
+# 이진탐색 확인
 def check(num):
     tmp = [graph[0]]
     for x in range(1, n):
