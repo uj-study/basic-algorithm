@@ -19,7 +19,7 @@ def isPossible(target, banned_id):
 def solution(user_id, banned_id):
     answer = []
 
-    for target in permutations(user_id, len(banned_id)): # 불량 사용자 길이만큼의 순열생성
+    for target in permutations(user_id, len(banned_id)): # 불량 사용자 길이만큼의 순열생성 (isPossible에서 각 위치의 값만 비교하므로 순열로 만듦)
         # 순열을 순회하며 체크
         if isPossible(target, banned_id):
             target = set(target)
